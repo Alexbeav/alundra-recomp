@@ -1,0 +1,31 @@
+{
+  "cue_path": "disc1.cue",
+  "cue_name": "disc1.cue",
+  "bin_name": "disc1.bin",
+  "track_count": 1,
+  "data_track_size": 606013968,
+  "data_track_md5": "fdc0f0ab1f22f3e12b9f3c4ae0ccb509",
+  "data_track_sha1": "de2bbc3185fa4ce01ad50bcda94899ccec7b7451",
+  "data_track_crc32": "f59277ad",
+  "boot_exe": "SLES_011.35",
+  "serial": "SLES-01135",
+  "serial_exe": "SLES_011.35",
+  "volume_id": "PLAYSTATION",
+  "display_name": "alundra-",
+  "load_address": "0x80020000",
+  "entry_pc": "0x80035E54",
+  "text_size": "0x0012A000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "0110750c6eacb29756616cc000884a270a67fdea1d0d3d4c00a797f31c73cc36",
+  "boot_exe_sha256": "f3016e262b3422414483f851324c1068de83027fa8b855e775a9625943c96a9a",
+  "seed_count": 537,
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

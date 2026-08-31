@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Alundra",
+    "id": "SLES-01135",
+    "boot_exe": "SLES_011.35"
+  },
+  "marketing": {
+    "description": "A native recompilation setup host for Alundra.",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "disc1.cue",
+    "bin_name": "disc1.bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 606013968,
+      "md5": "fdc0f0ab1f22f3e12b9f3c4ae0ccb509",
+      "sha1": "de2bbc3185fa4ce01ad50bcda94899ccec7b7451",
+      "crc32": "f59277ad"
+    },
+    "disc_fp": "0110750c6eacb29756616cc000884a270a67fdea1d0d3d4c00a797f31c73cc36"
+  },
+  "exe": {
+    "load_address": "0x80020000",
+    "entry_pc": "0x80035E54",
+    "text_size": "0x0012A000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 537,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
